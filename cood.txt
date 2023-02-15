@@ -1,0 +1,56 @@
+تنزيل لارفيل 8
+composer create-project laravel/laravel:"^8.0" elancer-app
+
+php artisan make:migration create_categories_table
+
+php artisan make:controller CategoriesController
+
+php artisan route:list
+
+php artisan storage:link
+php artisan make:controller PhotoController -r
+php artisan make:model Photo
+php artisan migrate
+
+php artisan migrate:status
+
+php artisan migrate:rollback
+
+php artisan migrate:reset
+
+php artisan migrate:refresh بتعمل درب باك كاملup اذا مستغني على داته في جداول
+
+php artisan migrate:fresh  
+
+php artisan vendor:publish --tag=laravel-pagination
+
+
+composer require laravel/breeze --dev
+قبل ما تنزل باخد نسخمه من web.php
+php artisan breeze:install
+npm install
+npm run dev
+
+php artisan make:request Client\ProjectRequest
+
+php artisan make:migration add_attachments_to_projects_table
+php artisan make:migration create_photos_table
+
+php .\artisan config:cache
+php .\artisan config:clear
+
+
+php artisan down // 503 SERVICE UNAVAILABLE
+php artisan down --secret=123  //   http://127.0.0.1:8000/123
+
+php artisan up
+
+php artisan list
+
+php artisan make:component FrontLayout
+
+composer require laravel/breeze:1.4
+composer require laravel/breeze --dev
+اخذ نسخة من راوت
+php artisan breeze:install
+npm install" && "npm run dev
